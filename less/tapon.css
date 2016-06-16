@@ -18,11 +18,11 @@ p.intro {
   color: #AFB8C1;
 }
 h2 {
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 500;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 100;
   z-index: 999;
 }
@@ -31,7 +31,7 @@ h3 {
   /*margin-bottom: -0.4em;*/
 }
 .orange {
-  color: #FFDB45;
+  color: #00E19F;
 }
 .deep-grey {
   color: #AFB8C1;
@@ -55,7 +55,7 @@ img.app {
   background-color: #F8F8F8;
 }
 .section3 {
-  background-color: #FFDB45;
+  background-color: #00E19F;
 }
 .section2-img {
   width: 40%;
@@ -90,19 +90,19 @@ img.section4-img {
   padding: 12px 15px;
   margin: 3% auto;
   width: 18%;
-  font-size: 1.4em;
+  font-size: 0.75em;
   white-space: nowrap;
   background-color: #FFFFFF;
-  color: #FFDB45;
+  color: #00E19F;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
   font-style: normal;
   text-transform: none;
   display: inline-block;
-  -webkit-box-shadow: 0px 10px 20px 1px #F5D23E;
-  -moz-box-shadow: 0px 10px 20px 1px #F5D23E;
-  box-shadow: 0px 10px 20px 1px #F5D23E;
+  -webkit-box-shadow: 0px 10px 20px 1px #00a292;
+  -moz-box-shadow: 0px 10px 20px 1px #00a292;
+  box-shadow: 0px 10px 20px 1px #00a292;
 }
 .download-button-2 {
   -moz-border-radius: 8px;
@@ -111,11 +111,11 @@ img.section4-img {
   padding: 12px 15px;
   margin: 3% auto;
   width: 18%;
-  font-size: 1.4em;
+  font-size: 0.75em;
   white-space: nowrap;
   background-color: #FFFFFF;
   font-weight: 500;
-  color: #FFDB45;
+  color: #00E19F;
   text-decoration: none;
   text-align: center;
   font-style: normal;
@@ -152,13 +152,13 @@ img.section4-img {
     width: 80%;
   }
   .download-button {
-    font-size: 3em;
+    font-size: 1em;
     border-radius: 300px;
     width: 60%;
     margin: 2% auto;
   }
   .download-button-2 {
-    font-size: 3em;
+    font-size: 1em;
     border-radius: 300px;
     width: 60%;
     margin: 2% auto;
@@ -171,10 +171,10 @@ img.section4-img {
     margin-bottom: 0.4em;
   }
   h2 {
-    font-size: 7em;
+    font-size: 2em;
   }
   h3 {
-    font-size: 4em;
+    font-size: 1.5em;
   }
   .section2-img {
     width: 70%;
@@ -197,7 +197,7 @@ img.section4-img {
   p.intro {
     margin-top: 3em;
     font-weight: 100;
-    font-size: 2.5em;
+    font-size: 1em;
     color: #AFB8C1;
   }
   #about-us {
@@ -205,7 +205,7 @@ img.section4-img {
     right: 50px;
     border-radius: 100px;
     padding: 0.3em 1.2em;
-    font-size: 2em;
+    font-size: 1em;
     border-width: thick;
   }
 }
