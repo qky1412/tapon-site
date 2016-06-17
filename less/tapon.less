@@ -1,5 +1,10 @@
 @import "variables.less";
 @import "mixins.less";
+
+body {
+  font-family: 'Microsoft YaHei', Merriweather, 'Helvetica Neue', Arial, sans-serif;
+}
+
 .section0 {
   padding: 100px 0;
   background-image: url("../img/product/bg.png");
@@ -174,7 +179,18 @@ img.section4-img {
   border: 2px solid white;
   color: white;
 }
-
+.navbar-default .navbar-nav>li>a {
+  color: black;
+  .transition-all;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: @theme-primary;
+  .transition-all;
+}
+.navbar-default .navbar-nav>li>a.selected {
+  color: @theme-primary;
+  .transition-all;
+}
 @media only screen
 and (max-device-width: 640px),
 only screen and (max-device-width: 667px),

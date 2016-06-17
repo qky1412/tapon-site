@@ -29,12 +29,19 @@
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //Navigation
-                anchors: ['app', 'introduction-1', 'ntroduction-2', 'ntroduction-3', 'ntroduction-4', 'download'],
+                anchors: ['product', 'solution', 'aboutus', 'contactus'],
                 css3: true,
                 'navigation': true,
                 'navigationPosition': 'right',
 
                 'afterLoad': function (anchorLink, index) {
+                    $(".navbar li a").each(function() {
+                        if (this.href.indexOf(anchorLink) != -1) {
+                            $(this).addClass('selected');
+                        } else {
+                            $(this).removeClass('selected');
+                        }
+                    });
 //                    //‘关于我们’按钮的颜色判定
 //                    if (index == 1 || index == 4) {
 //                        $('#about-us').removeClass('grey-surface').addClass('white-surface');
@@ -74,16 +81,19 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li>
-                        <a class="page-scroll" href="index.html">首页</a>
+                        <a class="page-scroll selected" href="#product">产品</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#us">产品</a>
+                        <a class="page-scroll" href="#solution">解决方案</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">联系我们</a>
+                        <a class="page-scroll" href="#aboutus">关于我们</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="job.html">加入我们</a>
+                        <a class="page-scroll" href="#contactus">联系我们</a>
+                    </li>
+                    <li>
+                        <a  href="job.html">诚聘英才</a>
                     </li>
                 </ul>
             </div>
@@ -97,58 +107,29 @@
 
     <div class="section section0">
         <img class="title animated fadeIn" src="img/product/slogan.png"/>
-
-        <div>
-            <a class="download-button animated tada"
-               href="https://itunes.apple.com/us/app/liu-lian-yong-xin-xian-qing/id1018136277?l=zh&ls=1&mt=8">iPhone版下载</a>
-            <a class="download-button animated tada"
-               href="http://www.playfresh.cn/product/playfresh.apk">Android版下载</a>
-        </div>
-
         <img class="app animated bounceInUp" src="img/product/ui_page.png"/>
     </div>
     <div class="section section1">
-        <img class="img-center section1-img" src="img/product/pageone_image.png"/>
+        <img class="section2-img" src="img/product/pageone_image.png"/>
 
-        <div class="section1-text">
-            <h2 class="orange up">给力狂欢</h2>
 
-            <h3 class="deep-grey">玩趣味任务赢取惊喜厚礼</h3>
-        </div>
     </div>
     <div class="section section2">
         <img class="section2-img" src="img/product/pagetwo_image.png"/>
 
-        <div class="section2-text">
-            <h2 class="orange up">无限创意</h2>
 
-            <h3 class="deep-grey">主题线路体验精彩玩法</h3>
-        </div>
     </div>
     <div class="section section3">
-        <div class="section3-text">
-            <h2 class="white up">无需远行</h2>
 
-            <h3 class="white">优质小铺一触即达享乐活</h3>
-        </div>
         <img class="section2-img" src="img/product/pagethree_image.png"/>
     </div>
     <div class="section section4">
-        <h2 class="orange up">拒绝无聊</h2>
 
-        <h3 class="deep-grey">任务盒子开启城市游乐场</h3>
         <img class="img-center section4-img" src="img/product/pagefour_image.png"/>
     </div>
     <div class="section section5">
         <img class="big-logo" src="img/product/bg_2.0.png"/>
 
-        <p class="intro">一键下载，娱乐嗨不停，带你开心带你飞！</p>
-        <div>
-            <a class="download-button-2 fadeIn"
-               href="https://itunes.apple.com/us/app/liu-lian-yong-xin-xian-qing/id1018136277?l=zh&ls=1&mt=8">iPhone版下载</a>
-            <a class="download-button-2 fadeIn"
-               href="http://www.playfresh.cn/product/playfresh.apk">Android版下载</a>
-        </div>
 
     </div>
 </div>
