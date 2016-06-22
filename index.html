@@ -19,7 +19,12 @@
 
     <script src="//cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
     <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script>
+        if (screen && screen.width > 768) {
+            document.write('<script type="text/javascript" src="//cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.min.js"><\/script>');
+        }
+    </script>
+
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom CSS-->
@@ -103,15 +108,44 @@
     </nav>
 </header>
 
-<div id="fullpage">
+<div id="fullpage" style="margin-top:0px;">
 
     <div class="section section0">
         <img class="title animated fadeIn" src="img/product/slogan.png"/>
         <img class="app animated bounceInUp" src="img/product/ui_page.png"/>
     </div>
     <div class="section section1">
-        <img class="section2-img" src="img/product/pageone_image.png"/>
 
+            <div class="container">
+                <div class="row">
+                    <img src="img/avatar2.png" width="100" height="100" class="img img-responsive pull-left"/>
+                </div>
+                <div class="row">
+                    <div class="card1 col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                        <div class="card-content">
+                            <h4 class="text-left">跨思支付系统(QuaS)</h4>
+                            <p>国内越来越多的企业和商户意识到支付服务是自身不可或缺的一部分，也是自身能力体现的重要组成部分。但部署一套能满足安全、性能、灵活等各方面要求的支付系统不是一般企业能够胜任。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card2 col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                        <div class="card-content">
+                            <h4>跨思支付系统(QuaS)</h4>
+                            <p>国内越来越多的企业和商户意识到支付服务是自身不可或缺的一部分，也是自身能力体现的重要组成部分。但部署一套能满足安全、性能、灵活等各方面要求的支付系统不是一般企业能够胜任。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card3 col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                        <div class="card-content">
+                            <h4>跨思支付系统(QuaS)</h4>
+                            <p>国内越来越多的企业和商户意识到支付服务是自身不可或缺的一部分，也是自身能力体现的重要组成部分。但部署一套能满足安全、性能、灵活等各方面要求的支付系统不是一般企业能够胜任。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     </div>
     <div class="section section2">
