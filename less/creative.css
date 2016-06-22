@@ -15,9 +15,9 @@ hr.light {
   border-color: white;
 }
 a {
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
   color: #00E19F;
 }
 a:hover,
@@ -60,9 +60,9 @@ aside {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #00E19F;
@@ -224,9 +224,9 @@ header .header-content .header-content-inner p {
   text-align: center;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   width: 100%;
@@ -273,9 +273,9 @@ header .header-content .header-content-inner p {
   color: #222;
   background-color: white;
   border-color: white;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -321,9 +321,9 @@ fieldset[disabled] .btn-default.active {
   color: white;
   background-color: #00E19F;
   border-color: #00E19F;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .btn-primary:hover,
 .btn-primary:focus,

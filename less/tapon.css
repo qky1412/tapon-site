@@ -152,21 +152,25 @@ img.section4-img {
 }
 .navbar-default .navbar-nav > li > a {
   color: black;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .navbar-default .navbar-nav > li > a:hover {
   color: #00E19F;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .navbar-default .navbar-nav > li > a.selected {
   color: #00E19F;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #00a292;
 }
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   img.title {
