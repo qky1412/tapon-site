@@ -36,34 +36,57 @@ body {
   border: 2px solid white;
   color: white;
 }
-.navbar.navbar-default {
+.light {
+  color: white !important;
+}
+.dark {
+  color: #5B4E4E !important;
+}
+.light.navbar.navbar-default {
   background: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  margin-left: 2em;
-  margin-right: 2em;
+  border-left: none;
+  border-right: none;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.dark.navbar.navbar-default {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-right: none;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 .navbar-default .navbar-nav > li {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.navbar-default .navbar-nav > li > a {
+.light.navbar-default .navbar-nav > li > a {
   font-size: 1em;
+  font-weight: 200;
   color: white;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.dark.navbar-default .navbar-nav > li > a {
+  font-size: 1em;
+  font-weight: 200;
+  color: #5B4E4E;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   transition: all 0.25s;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  font-size: 1.15em;
-  color: white;
+  font-weight: bold;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   transition: all 0.25s;
 }
 .navbar-default .navbar-nav > li > a.selected {
-  font-size: 1.15em;
-  color: white;
+  font-weight: bold;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   transition: all 0.25s;
@@ -72,8 +95,17 @@ body {
   background-position: center bottom;
   background-size: 4px 4px;
 }
-.navbar.navbar-default a.navbar-brand {
+.light.navbar.navbar-default a.navbar-brand {
   color: white;
+  padding-top: 2rem;
+  padding-left: 2em;
+  background-image: url(../img/home/img_tapon_logo_color.png);
+  background-repeat: no-repeat;
+  background-position: 0 1em;
+  background-size: 26.4px 32.8px;
+}
+.dark.navbar.navbar-default a.navbar-brand {
+  color: #5B4E4E;
   padding-top: 2rem;
   padding-left: 2em;
   background-image: url(../img/home/img_tapon_logo_color.png);
@@ -84,24 +116,6 @@ body {
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: white;
-}
-.card-content {
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-top: 170px;
-  margin-bottom: 1em;
-  background: white;
-  padding: 1em;
-  box-shadow: 0px 0px 30px rgba(142, 142, 142, 0.2);
-}
-.card1,
-.card2,
-.card3 {
-  margin-top: 1em;
-  background-image: url(../img/avatar2.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 90% 200px;
 }
 .section0 img.title {
   width: 419px;
@@ -151,8 +165,11 @@ body {
     border: none;
     padding-right: 0;
   }
-  .navbar-default .navbar-toggle .icon-bar {
+  .light.navbar-default .navbar-toggle .icon-bar {
     background-color: white;
+  }
+  .dark.navbar-default .navbar-toggle .icon-bar {
+    background-color: #5B4E4E;
   }
   .navbar-default .navbar-toggle:focus,
   .navbar-default .navbar-toggle:hover {
@@ -161,15 +178,32 @@ body {
   .navbar-collapse {
     background-color: rgba(0, 0, 0, 0.4);
   }
-  .navbar.navbar-default {
+  .light.navbar.navbar-default {
     background: transparent;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin-left: 0em;
     margin-right: 0em;
   }
-  .navbar.navbar-default a.navbar-brand {
+  .dark.navbar.navbar-default {
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+  .light.navbar.navbar-default a.navbar-brand {
     font-size: 1.05em;
     color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 3em;
+    background-image: url(../img/home/img_tapon_logo_color.png);
+    background-repeat: no-repeat;
+    background-position: 1em 1em;
+    background-size: 25px 25px;
+  }
+  .dark.navbar.navbar-default a.navbar-brand {
+    font-size: 1.05em;
+    color: #5B4E4E;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     padding-left: 3em;
@@ -196,7 +230,7 @@ body {
     height: 96px;
     margin-top: 15%;
   }
-  .entry-panel span {
+  .entry-panel a {
     color: white;
     font-size: 1em;
   }
@@ -212,8 +246,9 @@ body {
     border-bottom: none;
   }
   .navbar-default .navbar-nav > li > a.selected {
-    color: #00E19F;
+    color: white;
     box-shadow: none;
+    background: none;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     transition: all 0.25s;
