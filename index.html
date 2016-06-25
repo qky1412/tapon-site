@@ -28,25 +28,26 @@
 
     <script>
         $(document).ready(function () {
-            if (screen && screen.width > 768) {
+
                 $('#fullpage').fullpage({
                     //Navigation
-                    anchors: ['product', 'solution', 'aboutus', 'contactus'],
+                    //anchors: ['product', 'solution', 'aboutus', 'contactus'],
                     css3: true,
+                    verticalCentered: false,
                     'navigation': true,
                     'navigationPosition': 'right',
 
                     'afterLoad': function (anchorLink, index) {
-                        $(".navbar li a").each(function() {
-                            if (this.href.indexOf(anchorLink) != -1) {
-                                $(this).addClass('selected');
-                            } else {
-                                $(this).removeClass('selected');
-                            }
-                        });
+//                        $(".navbar li a").each(function() {
+//                            if (this.href.indexOf(anchorLink) != -1) {
+//                                $(this).addClass('selected');
+//                            } else {
+//                                $(this).removeClass('selected');
+//                            }
+//                        });
                     }
                 });
-            }
+
 
         });
     </script>
@@ -66,15 +67,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.html">Tapon</a>
+                <a class="navbar-brand page-scroll" href="index.html">太棒信息科技（上海）有限公司</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-
                     <li>
-                        <a class="page-scroll selected" href="#product">产品</a>
+                        <a class="page-scroll selected" href="#home">首页</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#product">产品体系</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#solution">解决方案</a>
@@ -96,64 +99,32 @@
     </nav>
 </header>
 
-<div id="fullpage" style="margin-top:0px;">
+<div id="fullpage">
 
     <div class="section section0">
-        <img class="title animated fadeIn" src="img/product/slogan.png"/>
-        <img class="app animated bounceInUp" src="img/product/ui_page.png"/>
+        <img class="title animated fadeIn" src="img/home/img_home_text_1.png"/>
     </div>
     <div class="section section1">
-
-            <div class="container">
-                <div class="card-title row">
-                    <img src="img/avatar2.png" width="100" height="100" class="img img-responsive pull-left"/>
-                </div>
-                <div class="row">
-                    <div class="card1 col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="card-content">
-                            <h4 class="text-left">跨思支付系统(QuaS)</h4>
-                            <p>国内越来越多的企业和商户意识到支付服务是自身不可或缺的一部分，也是自身能力体现的重要组成部分。但部署一套能满足安全、性能不是一般企业能够胜任。
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card2 col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="card-content">
-                            <h4>跨思支付系统(QuaS)</h4>
-                            <p>国内越来越多的企业和商户意识到支付服务是自身不可或缺的一部分，也是自身能力体现的重要组成部分。但部署一套能满足安全、性能、灵活等各方企业能够胜任。
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card3 col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <div class="card-content">
-                            <h4>跨思支付系统(QuaS)</h4>
-                            <p>国内越来越多的企业和商户意识到支付服务是自身不可或缺的一部分，也是自身能力体现的重要组成部分。但部署一套能满足安全、性能付系统不是一般企业能够胜任。
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <img class="title pull-right animated fadeIn " src="img/home/img_home_text_2.png"/>
+        <div class="container-fluid entry-panel text-center">
+            <div class="row">
+                <div class="col-md-3 hidden-xs"></div>
+                <div class="col-md-2 col-xs-4"><a >跨思支付系统</a></div>
+                <div class="col-md-2 col-xs-4"><a >发卡+移动支付</a></div>
+                <div class="col-md-2 col-xs-4"><a >C.L.A.R.D平台</a></div>
+                <div class="col-md-3 hidden-xs"></div>
             </div>
 
+        </div>
     </div>
     <div class="section section2">
-        <img class="section2-img" src="img/product/pagetwo_image.png"/>
-
-
+        <img class="title pull-right animated fadeIn pull-right" src="img/home/img_home_text_3.png"/>
+        <div class="container-fluid footer-panel text-center">
+            <h4>copyright 2016 Tapon</h4>
+        </div>
     </div>
-    <div class="section section3">
-
-        <img class="section2-img" src="img/product/pagethree_image.png"/>
-    </div>
-    <div class="section section4">
-
-        <img class="img-center section4-img" src="img/product/pagefour_image.png"/>
-    </div>
-    <div class="section section5">
-        <img class="big-logo" src="img/product/bg_2.0.png"/>
 
 
-    </div>
 </div>
 
 </body>
