@@ -1,5 +1,7 @@
 body {
   font-family: 'Microsoft YaHei', Merriweather, 'Helvetica Neue', Arial, sans-serif;
+  color: #5B4E4E;
+  font-size: 16px;
 }
 .section {
   position: relative;
@@ -159,6 +161,58 @@ body {
 }
 .footer-panel p {
   color: white;
+}
+.product.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #FAFAFA;
+  padding-bottom: 4em;
+}
+.product-cover {
+  height: 40vh;
+  min-height: 40vh;
+  background-image: url(../img/product/img_product_quas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product-cover .quas {
+  background-image: url(../img/product/img_product_quas.jpg);
+}
+.product-header {
+  margin-top: -16vh;
+}
+.product-header .title {
+  color: white;
+  font-size: 2.5em;
+}
+.product-content {
+  margin-top: 2em;
+  padding-bottom: 2em;
+  background-color: white;
+  text-align: center;
+}
+.product-title {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.product-desc {
+  line-height: 2em;
+}
+.product-promise-title {
+  font-size: 1.15em;
+  font-weight: 400;
+  margin-top: 2em;
+}
+.product-promise-content {
+  line-height: 2em;
+}
+footer.footer {
+  color: white;
+  padding: 1em;
+  background-color: #3C3F4A;
 }
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   .navbar-default .navbar-toggle {
