@@ -16,10 +16,28 @@
     <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="less/tapon.css"/>
+    <script>
+        $(document).ready(function () {
+            var mainbottom = $('#header').offset().top + $('#header').height();
+
+            // on scroll,
+            $(window).on('scroll',function(){
+
+                // we round here to reduce a little workload
+                stop = Math.round($(window).scrollTop());
+                if (stop > mainbottom) {
+                    $('.navbar').addClass('past-header');
+                } else {
+                    $('.navbar').removeClass('past-header');
+                }
+
+            });
+        });
+    </script>
 </head>
 <body>
 
-    <nav class="navbar navbar-default  navbar-fixed-top light">
+    <nav class="navbar navbar-default  navbar-fixed-top light ">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -30,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="index.html">太棒信息科技（上海）有限公司</a>
+                <a class="navbar-brand white" href="index.html">太棒信息科技（上海）有限公司</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -62,10 +80,10 @@
     </nav>
 
 <div class="product container-fluid">
-    <div class="product-cover quas">
+    <div  class="product-cover quas">
     </div>
-    <div class="product-header container text-center">
-        <h4 class="title text-left">跨思支付系统（Quas）</h4>
+    <div  class="product-header container text-center">
+        <h4 id="header" class="title text-left">跨思支付系统（Quas）</h4>
         <div class="product-content container">
             <div class="product-title">产品理念</div>
             <div class="row">
