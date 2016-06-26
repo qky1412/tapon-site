@@ -67,7 +67,8 @@ body {
   transition: all 0.25s;
 }
 .navbar.navbar-default.past-header {
-  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: none;
+  background-color: #79d3d5;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   transition: all 0.25s;
@@ -260,7 +261,8 @@ footer.footer {
     padding-right: 0em;
   }
   .navbar.navbar-default.past-header {
-    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: none;
+    background-color: #79d3d5;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     transition: all 0.25s;
