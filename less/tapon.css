@@ -214,6 +214,12 @@ body {
 .product-cover.solution-park {
   background-image: url(../img/solution/img_cover_park.jpg);
 }
+.product-cover.solution-mall {
+  background-image: url(../img/solution/img_cover_mall.jpg);
+}
+.product-cover.solution-enterprise {
+  background-image: url(../img/solution/img_cover_enterprise.jpg);
+}
 .product-header {
   margin-top: -16vh;
 }
@@ -251,6 +257,9 @@ body {
 }
 .product-title.green {
   background-image: url(../img/product/line_green.png);
+}
+.product-title.red {
+  background-image: url(../img/product/line_yellow.png);
 }
 .product-desc {
   line-height: 2em;
@@ -422,7 +431,7 @@ footer.footer {
   background-size: 40px 30px, 40px 30px;
 }
 .solution-item {
-  padding: 0 4em 0 4em;
+  padding: 0 6em 0 6em;
 }
 .hr-dot {
   border-bottom: none;
@@ -433,6 +442,10 @@ footer.footer {
   height: 3px;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+.solution-item-title {
+  font-size: 1.25em;
+  font-weight: bold;
 }
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   .navbar-default .navbar-toggle {
