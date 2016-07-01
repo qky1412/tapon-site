@@ -2,6 +2,7 @@ body {
   font-family: 'Microsoft YaHei', Merriweather, 'Helvetica Neue', Arial, sans-serif;
   color: #5B4E4E;
   font-size: 16px;
+  background-color: #3C3F4A;
 }
 .section {
   position: relative;
@@ -187,7 +188,7 @@ body {
 .product-cover {
   height: 40vh;
   min-height: 40vh;
-  background-image: url(../img/product/img_product_quas.jpg);
+  background-image: url(../img/product/bg_产品体系主页.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -197,6 +198,9 @@ body {
 }
 .product-cover.pay {
   background-image: url(../img/product/img_product_pay.jpg);
+}
+.product-cover.clard {
+  background-image: url(../img/product/img_product_clard.jpg);
 }
 .product-header {
   margin-top: -16vh;
@@ -243,6 +247,54 @@ footer.footer {
   color: white;
   padding: 1em;
   background-color: #3C3F4A;
+}
+.product-system {
+  margin-top: -2em;
+}
+.product .title1 {
+  font-size: 1.25em;
+  padding-top: 14vh;
+  color: white;
+  padding-bottom: 1em;
+}
+.product .title2 {
+  color: white;
+  font-size: 3em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 0.25em;
+}
+.product .thumbnail {
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 2em ;
+  border: none;
+  border-radius: 0;
+}
+.product .thumbnail .caption h3 {
+  color: #5B4E4E;
+}
+.product .thumbnail .caption p {
+  margin-top: 3em;
+  color: #BFB9B9;
+}
+.product .thumbnail.thumbnail1 {
+  border-bottom: 2px solid #79d3d5;
+}
+.product .thumbnail.thumbnail2 {
+  border-bottom: 2px solid #4A91E3;
+}
+.product .thumbnail.thumbnail3 {
+  border-bottom: 2px solid #27507E;
+}
+.product .thumbnail.thumbnail1 a {
+  color: #79d3d5;
+}
+.product .thumbnail.thumbnail2 a {
+  color: #4A91E3;
+}
+.product .thumbnail.thumbnail3 a {
+  color: #27507E;
 }
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   .navbar-default .navbar-toggle {
@@ -343,5 +395,20 @@ footer.footer {
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     transition: all 0.25s;
+  }
+  .product-system {
+    margin-top: -2em;
+  }
+  .product .title1 {
+    font-size: 1.25em;
+    padding-top: 10vh;
+    color: white;
+    padding-bottom: 1em;
+  }
+  .product .title2 {
+    color: white;
+    font-size: 2em;
+    border: none;
+    padding: 0.25em;
   }
 }
