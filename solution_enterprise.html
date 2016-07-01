@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="boostfield">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="description" content="太棒官网">
+    <title>太棒-企业</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- Plugin CSS -->
+    <link href="//cdn.bootcss.com/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="less/tapon.css"/>
+    <script>
+        $(document).ready(function () {
+            var mainbottom = $('#header').offset().top + $('#header').height();
+
+            // on scroll,
+            $(window).on('scroll',function(){
+
+                // we round here to reduce a little workload
+                stop = Math.round($(window).scrollTop());
+                if (stop > mainbottom) {
+                    $('.navbar').addClass('past-header');
+                } else {
+                    $('.navbar').removeClass('past-header');
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top light ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand white" href="index.html">太棒</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="product.html">产品体系</a>
+                </li>
+                <li>
+                    <a class="page-scroll selected" href="solution.html">解决方案</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#aboutus">关于我们</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="#contactus">联系我们</a>
+                </li>
+                <li>
+                    <a  class="" href="job.html">诚聘英才</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="product container-fluid">
+    <div  class="product-cover solution-enterprise">
+    </div>
+    <div  class="product-header container text-center">
+        <h4 id="header" class="title text-left">企业</h4>
+        <div class="product-content container">
+            <div class="product-title yellow">挑战</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="product-desc">公司和家无疑是我们待的最长的地方，如何给企业打造一体化的管理系统，
+                        如何让员工一卡在手，畅通无阻。</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <hr>
+
+            <div class="product-title yellow">我们能做什么</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="product-desc">智能化开发企业管理系统，提供一整套停车、门禁、餐饮、会议室享用、授权访客、员工卡解决方案，为企业与员工搭建最便捷的桥梁。</p>
+                    <img src="img/solution/img_enterprise_whatcanwedo.png" width="540" height="152">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <hr>
+            <div class="product-title yellow">我们的方案</div>
+            <div class="row text-center center-block">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_enterprise1.png" width="200" height="180">
+                                <p class="solution-item-title">实名认证</p>
+                                <p>通过企业APP，实名认证，领取企业发放至员工的虚拟员工卡或实体“magic pulse"。</p>
+                            </div>
+                        </div>
+                        <h5 class="hr-dot visible-xs-block"></h5>
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_enterprise2.png" width="200" height="180">
+                                <p class="solution-item-title">智能系统</p>
+                                <p>考勤统计智能化、门禁系统方便刷。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="hr-dot"></h5>
+                    <div class="row">
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_enterprise3.png" width="200" height="180">
+                                <p class="solution-item-title">合理安排</p>
+                                <p>精准确认时间预定会议室、授权访客并存储纪录。
+                                </p>
+                            </div>
+                        </div>
+                        <h5 class="hr-dot visible-xs-block"></h5>
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_enterprise4.png" width="200" height="180">
+                                <p class="solution-item-title">便携式方案</p>
+                                <p>team building、 餐饮卡、企业福利等，打开企业便捷式智能化方案。</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<footer class="footer text-center">
+    <p>copyright 2016 Tapon</p>
+</footer>
+</html>
