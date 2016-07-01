@@ -192,8 +192,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.product-cover .quas {
+.product-cover.quas {
   background-image: url(../img/product/img_product_quas.jpg);
+}
+.product-cover.pay {
+  background-image: url(../img/product/img_product_pay.jpg);
 }
 .product-header {
   margin-top: -16vh;
@@ -211,8 +214,15 @@ body {
 .product-title {
   margin-top: 2em;
   margin-bottom: 2em;
+  padding-bottom: 0.5em;
   font-size: 1.25em;
   font-weight: bold;
+  background-image: url(../img/product/绿色-横.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.product-title.blue {
+  background-image: url(../img/product/蓝色-横.png);
 }
 .product-desc {
   line-height: 2em;
@@ -226,6 +236,7 @@ body {
   line-height: 2em;
 }
 footer.footer {
+  font-weight: 100;
   color: white;
   padding: 1em;
   background-color: #3C3F4A;

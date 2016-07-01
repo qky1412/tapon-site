@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="boostfield">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="description" content="太棒官网">
+    <title>太棒-移动支付</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- Plugin CSS -->
+    <link href="//cdn.bootcss.com/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="less/tapon.css"/>
+    <script>
+        $(document).ready(function () {
+            var mainbottom = $('#header').offset().top + $('#header').height();
+
+            // on scroll,
+            $(window).on('scroll',function(){
+
+                // we round here to reduce a little workload
+                stop = Math.round($(window).scrollTop());
+                if (stop > mainbottom) {
+                    $('.navbar').addClass('past-header');
+                } else {
+                    $('.navbar').removeClass('past-header');
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top light ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand white" href="index.html">太棒信息科技（上海）有限公司</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a class="page-scroll selected" href="#product">产品体系</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#solution">解决方案</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#aboutus">关于我们</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="#contactus">联系我们</a>
+                </li>
+                <li>
+                    <a  class="" href="job.html">诚聘英才</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="product container-fluid">
+    <div  class="product-cover pay">
+    </div>
+    <div  class="product-header container text-center">
+        <h4 id="header" class="title text-left">移动支付</h4>
+        <div class="product-content container">
+            <div class="product-title blue">产品理念</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="product-desc">产品主要业务围绕为企业、商户、商圈提供单用途预付卡的发行、受理服务，作为商业机构的发卡专业化服务机构，
+                        利用银联现有的受理网络受理预付卡；重点利用Apple Pay、Samsung pay、HCE等移动入口帮助商业机构空中发行虚拟会员卡、单用途预付卡，
+                        连通或帮助商户建设更完善的会员忠诚体系。同时提供场景深入定制化解决方案（例如充值、预订、停车、门禁、房卡等），帮助商户实现对会员的智能化的增值服务。</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <hr>
+            <div class="product-title blue">产品特色</div>
+            <div class="product-feature row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 text-left">
+                    <div class="col-md-4">
+                        <p style="background-image: url(img/product/pay_银联ic.png);background-position: 0 center;background-repeat: no-repeat; background-size: 40px 40px; padding: 1em 0 1em 3em;">银联环境直接受理</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="background-image: url(img/product/pay_卡券ic.png);background-position: 0 center;background-repeat: no-repeat; background-size: 40px 40px; padding: 1em 0 1em 3em;">卡劵转赠、体验支付社交</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="background-image: url(img/product/pay_场景ic.png);background-position: 0 center;background-repeat: no-repeat; background-size: 40px 40px; padding: 1em 0 1em 3em;">丰富多样的应用场景</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="background-image: url(img/product/pay_蓝牙ic.png);background-position: 0 center;background-repeat: no-repeat; background-size: 40px 40px; padding: 1em 0 1em 3em;">nfc、二维码、蓝牙多种交互方式</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="background-image: url(img/product/pay_线上ic.png);background-position:0 center;background-repeat: no-repeat; background-size: 40px 40px; padding: 1em 0 1em 3em;">线上与线下的集合、完美实现o2o</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="background-image: url(img/product/pay_支付ic.png);background-position: 0 center;background-repeat: no-repeat; background-size: 40px 40px; padding: 1em 0 1em 3em;">支付标记化，银行账户般的安全保障</p>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</body>
+<footer class="footer text-center">
+    <p>copyright 2016 Tapon</p>
+</footer>
+</html>
