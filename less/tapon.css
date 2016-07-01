@@ -184,6 +184,7 @@ body {
   padding-right: 0;
   background-color: #FAFAFA;
   padding-bottom: 4em;
+  min-height: calc(93vh);
 }
 .product-cover {
   height: 40vh;
@@ -270,6 +271,17 @@ footer.footer {
   padding: 2em ;
   border: none;
   border-radius: 0;
+  box-shadow: 0 0 6px lightgray;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.product .thumbnail:hover,
+.product .thumbnail:focus {
+  box-shadow: 0 0 30px lightgray;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
 }
 .product .thumbnail .caption h3 {
   color: #5B4E4E;

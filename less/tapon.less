@@ -6,6 +6,7 @@ body {
   color: @theme-text-color;
   font-size: 16px;
   background-color: @footer-background;
+
 }
 //首页
 .section {
@@ -184,7 +185,7 @@ body {
   padding-right:0;
   background-color: @theme-background;
   padding-bottom: 4em;
-
+  min-height: calc(100vh - 7em);
 }
 .product-cover {
   height: 40vh;
@@ -277,6 +278,12 @@ footer.footer {
   padding: 2em ;
   border: none;
   border-radius: 0;
+  box-shadow: 0 0 6px lightgray;
+  .transition-all
+}
+.product .thumbnail:hover, .product .thumbnail:focus {
+  box-shadow: 0 0 30px lightgray;
+  .transition-all
 }
 .product .thumbnail .caption h3{
   color: @theme-text-color;
