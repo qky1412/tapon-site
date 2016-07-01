@@ -64,7 +64,7 @@ body {
   .transition-all;
 }
 .dark.navbar.navbar-default {
-  background: transparent;
+  background: @theme-background;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-left: none;
   border-right: none;
@@ -310,11 +310,68 @@ footer.footer {
 .product .thumbnail.thumbnail3 a {
   color: @theme-darkblue-color;
 }
+//job
+.job {
+  background-color: @theme-background;
+}
+.center-pills {
+  display: flex;
+  justify-content: center;
+}
+.job .nav-pills>li.active>a, .job .nav-pills>li.active>a:focus, .job .nav-pills>li.active>a:hover {
+  background-color: transparent;
+  color: @theme-primary;
+  .transition-all;
+}
+.job .nav-pills>li>a {
+  color: @theme-text-color;
+  .transition-all;
+}
+.job .nav-pills>li>a:focus, .job .nav-pills>li>a:hover {
+  background-color: transparent;
+  color: @theme-primary;
+  .transition-all;
+}
+.job .tab-content {
+  background-color: white;
+  padding: 2em;
+}
+.job h4 {
+  font-weight: bold;
+  border-left: 4px solid @theme-primary;
+  padding-left: 0.5em;
+}
+.job .content {
+  padding: 2em;
+}
+.job .content p {
+  color: @theme-blue-color;
+}
+.job .content ol {
+  -moz-padding-start: 1em;
+  -webkit-padding-start: 1em;
+}
+.job .content ol .indent-ol {
+  -moz-padding-start: 4em;
+  -webkit-padding-start: 4em;
+
+}
+.job .content ol>li {
+  margin-bottom: 1em;
+}
+.job .job-footer p{
+  color: @theme-text-color;
+}
+.job .job-footer a {
+  color: @theme-primary;
+  text-decoration: underline;
+}
 @media only screen
 and (max-device-width: 640px),
 only screen and (max-device-width: 667px),
 only screen and (max-width: 480px)
 {
+
   .navbar-default .navbar-toggle {
     border: none;
     padding-right: 0;
@@ -339,7 +396,7 @@ only screen and (max-width: 480px)
     padding-right: 0em;
   }
   .dark.navbar.navbar-default {
-    background: transparent;
+    background: @theme-background;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 0em;
     padding-right: 0em;
@@ -424,5 +481,16 @@ only screen and (max-width: 480px)
     font-size: 2em;
     border: none;
     padding: 0.25em;
+  }
+  .job .tab-content {
+    background-color: white;
+    padding: 1em;
+  }
+  .job .content {
+    padding: 1em;
+  }
+  .job img {
+    width: 263px;
+    height: 49px;
   }
 }

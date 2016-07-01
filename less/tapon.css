@@ -57,7 +57,7 @@ body {
   transition: all 0.25s;
 }
 .dark.navbar.navbar-default {
-  background: transparent;
+  background: #FAFAFA;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-left: none;
   border-right: none;
@@ -308,6 +308,69 @@ footer.footer {
 .product .thumbnail.thumbnail3 a {
   color: #27507E;
 }
+.job {
+  background-color: #FAFAFA;
+}
+.center-pills {
+  display: flex;
+  justify-content: center;
+}
+.job .nav-pills > li.active > a,
+.job .nav-pills > li.active > a:focus,
+.job .nav-pills > li.active > a:hover {
+  background-color: transparent;
+  color: #79d3d5;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.job .nav-pills > li > a {
+  color: #5B4E4E;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.job .nav-pills > li > a:focus,
+.job .nav-pills > li > a:hover {
+  background-color: transparent;
+  color: #79d3d5;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.job .tab-content {
+  background-color: white;
+  padding: 2em;
+}
+.job h4 {
+  font-weight: bold;
+  border-left: 4px solid #79d3d5;
+  padding-left: 0.5em;
+}
+.job .content {
+  padding: 2em;
+}
+.job .content p {
+  color: #4A91E3;
+}
+.job .content ol {
+  -moz-padding-start: 1em;
+  -webkit-padding-start: 1em;
+}
+.job .content ol .indent-ol {
+  -moz-padding-start: 4em;
+  -webkit-padding-start: 4em;
+}
+.job .content ol > li {
+  margin-bottom: 1em;
+}
+.job .job-footer p {
+  color: #5B4E4E;
+}
+.job .job-footer a {
+  color: #79d3d5;
+  text-decoration: underline;
+}
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   .navbar-default .navbar-toggle {
     border: none;
@@ -333,7 +396,7 @@ footer.footer {
     padding-right: 0em;
   }
   .dark.navbar.navbar-default {
-    background: transparent;
+    background: #FAFAFA;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 0em;
     padding-right: 0em;
@@ -422,5 +485,16 @@ footer.footer {
     font-size: 2em;
     border: none;
     padding: 0.25em;
+  }
+  .job .tab-content {
+    background-color: white;
+    padding: 1em;
+  }
+  .job .content {
+    padding: 1em;
+  }
+  .job img {
+    width: 263px;
+    height: 49px;
   }
 }
