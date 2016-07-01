@@ -209,7 +209,10 @@ body {
   background-image: url(../img/solution/bg_system.png);
 }
 .product-cover.solution-hotel {
-  background-image: url(../img/solution/img_解决方案详情_酒店.jpg);
+  background-image: url(../img/solution/img_cover_hotel.jpg);
+}
+.product-cover.solution-park {
+  background-image: url(../img/solution/img_cover_park.jpg);
 }
 .product-header {
   margin-top: -16vh;
