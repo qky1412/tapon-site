@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="boostfield">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="description" content="太棒官网">
+    <title>太棒-酒店</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- Plugin CSS -->
+    <link href="//cdn.bootcss.com/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="less/tapon.css"/>
+    <script>
+        $(document).ready(function () {
+            var mainbottom = $('#header').offset().top + $('#header').height();
+
+            // on scroll,
+            $(window).on('scroll',function(){
+
+                // we round here to reduce a little workload
+                stop = Math.round($(window).scrollTop());
+                if (stop > mainbottom) {
+                    $('.navbar').addClass('past-header');
+                } else {
+                    $('.navbar').removeClass('past-header');
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top light ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand white" href="index.html">太棒</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="#product">产品体系</a>
+                </li>
+                <li>
+                    <a class="page-scroll selected" href="#solution">解决方案</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#aboutus">关于我们</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="#contactus">联系我们</a>
+                </li>
+                <li>
+                    <a  class="" href="job.html">诚聘英才</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="product container-fluid">
+    <div  class="product-cover solution-hotel">
+    </div>
+    <div  class="product-header container text-center">
+        <h4 id="header" class="title text-left">酒店</h4>
+        <div class="product-content container">
+            <div class="product-title gold">挑战</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="product-desc">科技时代作用下，绝大多数客户通过互联网通道来预订产品和服务，OTA可以给客户提供更方便的渠道和更优惠的价格。酒店在推行忠诚计划的过程遇到了巨大的瓶颈。</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <hr>
+
+            <div class="product-title gold">我们能做什么</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="product-desc">太棒将为酒店设计更独特的会员产品和更贴心的荣誉服务让用户成为忠诚的“铁杆粉丝”。
+                        不断完善酒店长期以来执行的“客户忠诚度”计划，应从仅仅对消费者的争取和征服转为集中于消费者的忠诚与持久，让酒店与客户建立相互信任和依赖的高质量价值链。</p>
+                    <img src="img/solution/img_hotel_whatcanwedo.png" width="200" height="200">
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <hr>
+            <div class="product-title gold">我们的方案</div>
+            <div class="row text-center center-block">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_hotel1.png" width="200" height="180">
+                                <p>通过酒店APP注册／登录成为荣誉会客，领取C.L.A.R.D平台发放的虚拟会员卡，完成实名认证（可给会员帐户随时充值噢！）</p>
+                            </div>
+                        </div>
+                        <h5 class="hr-dot visible-xs-block"></h5>
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_hotel2.png" width="200" height="180">
+                                <p>旅行、出差随时通过酒店APP完成预订，享受官方最优惠最实时更新的资讯。（可根据您的消费数据偏好安排最适合您的房间和服务！）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="hr-dot"></h5>
+                    <div class="row">
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_hotel3.png" width="200" height="180">
+                                <p>酒店将从APP端发送“虚拟门禁”至
+                                    "Cardless"，可直接利用虚拟门禁刷房门入住！（不需要繁琐的带房间门卡出酒店，No Card,No Porblem）
+                                </p>
+                            </div>
+                        </div>
+                        <h5 class="hr-dot visible-xs-block"></h5>
+                        <div class="col-md-6 solution-item">
+                            <div>
+                                <img src="img/solution/img_酒店_4.png" width="200" height="180">
+                                <p>通过APP可直接管理自己的会员帐户以及卡券包。（卡券包可领取季度优惠券，或购买心仪的礼品卡。礼品卡可绑定账户，可转赠！）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="hr-dot"></h5>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="product-title gold">总结</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="product-desc">在酒店内的所有消费，可通过刷虚拟会员卡或是定制发放的其它“Magic Pulse"设备进行消费，
+                        实现完美的闭环O2O模式。</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer class="footer text-center">
+    <p>copyright 2016 Tapon</p>
+</footer>
+</html>
