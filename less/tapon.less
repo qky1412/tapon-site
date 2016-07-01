@@ -192,7 +192,7 @@ body {
 .product-cover {
   height: 40vh;
   min-height: 40vh;
-  background-image: url(../img/product/bg_system.jpg);
+  background-image: url(../img/product/bg_product_system.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -205,6 +205,9 @@ body {
 }
 .product-cover.clard {
   background-image: url(../img/product/img_product_clard.jpg);
+}
+.product-cover.solution-system {
+  background-image: url(../img/solution/bg_system.png);
 }
 .product-header {
   margin-top: -16vh;
@@ -236,6 +239,15 @@ body {
 }
 .product-title.darkblue {
   background-image: url(../img/product/line_dark_blue.png);
+}
+.product-title.gold {
+  background-image: url(../img/product/line_gold.png);
+}
+.product-title.yellow {
+  background-image: url(../img/product/line_yellow.png);
+}
+.product-title.green {
+  background-image: url(../img/product/line_green.png);
 }
 .product-desc {
   line-height: 2em;
@@ -281,6 +293,7 @@ footer.footer {
   border: none;
   border-radius: 0;
   box-shadow: 0px 10px 15px 0px rgba(141,141,141,0.07);
+  min-height: 401px;
   .transition-all
 }
 .product .thumbnail:hover, .product .thumbnail:focus {
@@ -294,23 +307,41 @@ footer.footer {
   margin-top: 3em;
   color: @theme-text-light-color;
 }
-.product .thumbnail.thumbnail1 {
+.product .thumbnail.thumbnail-green {
   border-bottom: 2px solid @theme-primary;
 }
-.product .thumbnail.thumbnail2 {
+.product .thumbnail.thumbnail-blue {
   border-bottom: 2px solid @theme-blue-color;
 }
-.product .thumbnail.thumbnail3 {
+.product .thumbnail.thumbnail-darkblue {
   border-bottom: 2px solid @theme-darkblue-color;
 }
-.product .thumbnail.thumbnail1 a {
+.product .thumbnail.thumbnail-red {
+  border-bottom: 2px solid @theme-red-color;
+}
+.product .thumbnail.thumbnail-yellow {
+  border-bottom: 2px solid @theme-yellow-color;
+}
+.product .thumbnail.thumbnail-gold {
+  border-bottom: 2px solid @theme-gold-color;
+}
+.product .thumbnail.thumbnail-green a {
   color: @theme-primary;
 }
-.product .thumbnail.thumbnail2 a {
+.product .thumbnail.thumbnail-blue a {
   color: @theme-blue-color;
 }
-.product .thumbnail.thumbnail3 a {
+.product .thumbnail.thumbnail-darkblue a {
   color: @theme-darkblue-color;
+}
+.product .thumbnail.thumbnail-red a {
+  color: @theme-red-color;
+}
+.product .thumbnail.thumbnail-gold a {
+  color: @theme-gold-color;
+}
+.product .thumbnail.thumbnail-yellow a {
+  color: @theme-yellow-color;
 }
 //job
 .job {
@@ -367,6 +398,18 @@ footer.footer {
 .job .job-footer a {
   color: @theme-primary;
   text-decoration: underline;
+}
+//解决方案首页
+.solution-title {
+  color: @theme-gold-color;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: 2em;
+  font-size: 1.25em;
+  background-image: url(../img/solution/img_quote_left.png), url(../img/solution/img_quote_right.png);
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+  background-size: 40px 30px, 40px 30px;
 }
 @media only screen
 and (max-device-width: 640px),

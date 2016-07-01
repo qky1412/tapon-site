@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="boostfield">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="description" content="太棒官网">
+    <title>太棒-解决方案</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- Plugin CSS -->
+    <link href="//cdn.bootcss.com/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="less/tapon.css"/>
+    <script>
+        $(document).ready(function () {
+            var mainbottom = $('#header').offset().top + $('#header').height();
+
+            // on scroll,
+            $(window).on('scroll',function(){
+
+                // we round here to reduce a little workload
+                stop = Math.round($(window).scrollTop());
+                if (stop > mainbottom) {
+                    $('.navbar').addClass('past-header');
+                } else {
+                    $('.navbar').removeClass('past-header');
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default  navbar-fixed-top light ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand white" href="index.html">太棒</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="product.html">产品体系</a>
+                </li>
+                <li>
+                    <a class="page-scroll selected" href="solution.html">解决方案</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#aboutus">关于我们</a>
+                </li>
+                <li>
+                    <a class="page-scroll " href="#contactus">联系我们</a>
+                </li>
+                <li>
+                    <a  class="" href="job.html">诚聘英才</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="product container-fluid">
+    <div  class=" text-center product-cover solution-system">
+        <p id="header" class="title1">太棒 解决方案</p>
+        <span class="title2">我们提供具体有效的解决方案</span>
+    </div>
+    <div class="text-center">
+        <div class="product-title gold">magic pulse</div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="solution-title">什么是Magic Pulse? 它可以是不同品类的设备、它可以存储你的信息数据、它还可以让你体验快速的支付服务，享受极致的客户体验。</p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+    </div>
+    <div  class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 product-entry">
+                        <div class="thumbnail thumbnail-gold">
+                            <img src="img/solution/img_home_hotel.png" alt="..." width="56" height="57">
+                            <div class="caption">
+                                <h3>酒店</h3>
+                                <p>完善完整的会员体系
+                                    提高客户忠诚度
+                                    享受高端、便捷的消费体验
+                                </p>
+                                <p><a href="product_quas.html">查看更多></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 product-entry">
+                        <div class="thumbnail thumbnail-yellow">
+                            <img src="img/solution/img_home_park.png" alt="..." width="56" height="57">
+                            <div class="caption">
+                                <h3>游乐园</h3>
+                                <p>充满魔法的奇幻旅程
+                                    畅通无阻的快速通道
+                                    最具人性化的交互体验
+                                </p>
+                                <p><a href="product_mobile.html">查看更多></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 product-entry">
+                        <div class="thumbnail thumbnail-red">
+                            <img src="img/solution/img_home_mall.png" alt="..." width="56" height="57">
+                            <div class="caption">
+                                <h3>商场</h3>
+                                <p>实时导购服务系统、
+                                    快捷、自主的时尚购物方式、
+                                    完美闭环O2O的实现</p>
+                                <p><a href="product_clard.html">查看更多></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 product-entry">
+                        <div class="thumbnail thumbnail-blue">
+                            <img src="img/solution/img_home_enterprise.png" alt="..." width="56" height="57">
+                            <div class="caption">
+                                <h3>企业</h3>
+                                <p>统一的系统管理
+                                    专业化多功能定制员工卡
+                                    员工与企业权限开放的信息共享
+                                </p>
+                                <p><a href="product_clard.html">查看更多></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+    </div>
+</div>
+</body>
+<footer class="footer text-center">
+    <p>copyright 2016 Tapon</p>
+</footer>
+</html>
