@@ -127,11 +127,13 @@ body {
   background-position: 0 1em;
   background-size: 26.4px 32.8px;
 }
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
-  background: @navigation-light;
+
+#fp-nav ul li a span {
+  background-color: rgba(121,211,213, 0.5);
 }
-
-
+#fp-nav ul li a.active span {
+  background-color: @theme-primary;
+}
 
 .section0 img.title {
   width: 419px;
@@ -278,11 +280,11 @@ footer.footer {
   padding: 2em ;
   border: none;
   border-radius: 0;
-  box-shadow: 0 0 6px lightgray;
+  box-shadow: 0px 10px 15px 0px rgba(141,141,141,0.07);
   .transition-all
 }
 .product .thumbnail:hover, .product .thumbnail:focus {
-  box-shadow: 0 0 30px lightgray;
+  box-shadow: 0px 10px 15px 0px rgba(141,141,141,0.3);
   .transition-all
 }
 .product .thumbnail .caption h3{
