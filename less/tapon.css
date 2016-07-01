@@ -224,6 +224,9 @@ body {
 .product-title.blue {
   background-image: url(../img/product/蓝色-横.png);
 }
+.product-title.darkblue {
+  background-image: url(../img/product/深蓝色-横.png);
+}
 .product-desc {
   line-height: 2em;
 }
