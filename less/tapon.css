@@ -303,7 +303,7 @@ footer.footer {
 .product .thumbnail {
   margin-left: 1em;
   margin-right: 1em;
-  padding: 2em ;
+  padding: 1.5em ;
   border: none;
   border-radius: 0;
   box-shadow: 0px 10px 15px 0px rgba(141, 141, 141, 0.07);
@@ -324,8 +324,12 @@ footer.footer {
   color: #5B4E4E;
 }
 .product .thumbnail .caption p {
-  margin-top: 3em;
+  margin-top: 2.5em;
   color: #BFB9B9;
+  line-height: 1.5em;
+}
+.product .thumbnail .caption .more {
+  margin-top: 4em;
 }
 .product .thumbnail.thumbnail-green {
   border-bottom: 2px solid #79d3d5;
@@ -451,7 +455,7 @@ footer.footer {
 }
 .hr-dot {
   border-bottom: none;
-  background-image: linear-gradient(to right, white 33%, rgba(0, 0, 0, 0.2) 0%);
+  background-image: linear-gradient(to right, white 33%, rgba(0, 0, 0, 0.1) 0%);
   background-position: bottom;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -463,6 +467,9 @@ footer.footer {
   font-size: 1.25em;
   font-weight: bold;
 }
+.solution-item-content {
+  color: rgba(0, 0, 0, 0.4);
+}
 .aboutus {
   background-image: url(../img/aboutus/img_bg1.png), url(../img/aboutus/img_bg2.png);
   background-repeat: no-repeat;
@@ -471,12 +478,13 @@ footer.footer {
 }
 .aboutus-title1 {
   color: #79d3d5;
-  margin: 2em;
+  margin: 2em 0 0em 0;
 }
 .aboutus-title2 {
   color: #5B4E4E;
   font-size: 3em;
   font-weight: 500;
+  margin-top: 0.5em;
 }
 .aboutus-title3 {
   color: #BFB9B9;
@@ -486,16 +494,17 @@ footer.footer {
 .contactus {
   margin: 2em 1em 4em 0;
 }
+.aboutus .name {
+  font-size: 1.25em;
+  font-weight: bold;
+}
 .aboutus .position {
   color: #BFB9B9;
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
 }
 .aboutus .description {
   padding: 0 6em 0 6em;
-}
-.aboutus .carousel img {
-  width: auto;
-  height: 180px;
-  max-height: 180px;
 }
 .media {
   background-color: #FAFAFA;
