@@ -64,7 +64,7 @@ body {
   .transition-all;
 }
 .dark.navbar.navbar-default {
-  background: @theme-background;
+  background: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-left: none;
   border-right: none;
@@ -74,7 +74,7 @@ body {
 }
 .navbar.navbar-default.past-header {
   border-bottom: none;
-  background-color: @theme-primary;
+  background-color: rgba(0,0,0,0.3);
   .transition-all;
 }
 .navbar-default .navbar-nav>li {
@@ -185,7 +185,7 @@ body {
 
 }
 .footer-panel p {
-  color: white;
+  color: rgba(255,255,255,0.5);
 }
 //产品详情页
 .product.container-fluid {
@@ -289,7 +289,7 @@ body {
 }
 footer.footer {
   font-weight: 100;
-  color: white;
+  color: rgba(255,255,255,0.5);
   padding: 1em;
   background-color: @footer-background;
 }
@@ -387,6 +387,7 @@ footer.footer {
   justify-content: center;
 }
 .job .nav-pills {
+  padding-top: 1em;
   margin-left: 20vw;
   margin-right: 20vw;
   border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -478,6 +479,7 @@ footer.footer {
 }
 .solution-item-content {
   color: rgba(0,0,0,0.4);
+  line-height: 1.75em;
 }
 //关于我们
 .aboutus {
@@ -488,6 +490,7 @@ footer.footer {
 }
 .aboutus-title1 {
   color: @theme-primary;
+  font-weight: bold;
   margin: 2em 0 0em 0;
 }
 .aboutus-title2 {
@@ -524,10 +527,11 @@ footer.footer {
   margin-bottom:4em;
 }
 .media-body {
-  padding: 2em 1em 2em 2em;
+  padding: 3em 1em 2em 2em;
 }
 .media-body .media-heading {
   font-weight: bold;
+  margin-bottom: 2em;
 }
 .left.carousel-control {
   background-image: url(../img/aboutus/img_left.png);
@@ -612,7 +616,7 @@ only screen and (max-width: 480px)
   .section0 img.title {
     width: 214.5px;
     height: 144.5px;
-    margin-top: 40vh;
+    margin-top: 38vh;
   }
   .section1 img.title {
     width: 209.5px;
