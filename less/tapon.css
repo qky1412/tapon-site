@@ -111,6 +111,9 @@ body {
   background-position: center bottom;
   background-size: 4px 4px;
 }
+.dark.navbar-default .navbar-nav > li > a.selected {
+  background-image: url(../img/home/img_nav_select_dark.png);
+}
 .light.navbar.navbar-default a.navbar-brand {
   color: white;
   padding-top: 2rem;
@@ -261,6 +264,9 @@ body {
 .product-title.red {
   background-image: url(../img/product/line_yellow.png);
 }
+.product-title.purple {
+  background-image: url(../img/product/line_purple.png);
+}
 .product-desc {
   line-height: 2em;
 }
@@ -324,10 +330,10 @@ footer.footer {
   border-bottom: 2px solid #79d3d5;
 }
 .product .thumbnail.thumbnail-blue {
-  border-bottom: 2px solid #4A91E3;
+  border-bottom: 2px solid #4A90E2;
 }
 .product .thumbnail.thumbnail-darkblue {
-  border-bottom: 2px solid #27507E;
+  border-bottom: 2px solid #274F7E;
 }
 .product .thumbnail.thumbnail-red {
   border-bottom: 2px solid #F05A28;
@@ -336,25 +342,31 @@ footer.footer {
   border-bottom: 2px solid #FABE6C;
 }
 .product .thumbnail.thumbnail-gold {
-  border-bottom: 2px solid #AC9873;
+  border-bottom: 2px solid #9B835B;
+}
+.product .thumbnail.thumbnail-purple {
+  border-bottom: 2px solid #6C6CFA;
 }
 .product .thumbnail.thumbnail-green a {
   color: #79d3d5;
 }
 .product .thumbnail.thumbnail-blue a {
-  color: #4A91E3;
+  color: #4A90E2;
 }
 .product .thumbnail.thumbnail-darkblue a {
-  color: #27507E;
+  color: #274F7E;
 }
 .product .thumbnail.thumbnail-red a {
   color: #F05A28;
 }
 .product .thumbnail.thumbnail-gold a {
-  color: #AC9873;
+  color: #9B835B;
 }
 .product .thumbnail.thumbnail-yellow a {
   color: #FABE6C;
+}
+.product .thumbnail.thumbnail-purple a {
+  color: #6C6CFA;
 }
 .job {
   background-color: #FAFAFA;
@@ -363,32 +375,34 @@ footer.footer {
   display: flex;
   justify-content: center;
 }
+.job .nav-pills {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
 .job .nav-pills > li.active > a,
 .job .nav-pills > li.active > a:focus,
 .job .nav-pills > li.active > a:hover {
   background-color: transparent;
   color: #79d3d5;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  transition: all 0.25s;
+  background-image: url(../img/job/di_hire_select.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 12px 12.5px;
 }
 .job .nav-pills > li > a {
   color: #5B4E4E;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  transition: all 0.25s;
 }
 .job .nav-pills > li > a:focus,
 .job .nav-pills > li > a:hover {
   background-color: transparent;
   color: #79d3d5;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  transition: all 0.25s;
 }
 .job .tab-content {
   background-color: white;
   padding: 2em;
+  margin-bottom: 4em;
 }
 .job h4 {
   font-weight: bold;
@@ -396,10 +410,10 @@ footer.footer {
   padding-left: 0.5em;
 }
 .job .content {
-  padding: 2em;
+  padding: 2em 2em 0 2em;
 }
 .job .content p {
-  color: #4A91E3;
+  color: #4A90E2;
 }
 .job .content ol {
   -moz-padding-start: 1em;
@@ -413,6 +427,7 @@ footer.footer {
   margin-bottom: 1em;
 }
 .job .job-footer p {
+  padding-top: 1em;
   color: #5B4E4E;
 }
 .job .job-footer a {
@@ -420,7 +435,7 @@ footer.footer {
   text-decoration: underline;
 }
 .solution-title {
-  color: #AC9873;
+  color: #9B835B;
   padding-left: 3em;
   padding-right: 3em;
   margin-bottom: 2em;
@@ -470,9 +485,26 @@ footer.footer {
 .contactus {
   margin: 2em 1em 4em 0;
 }
-.address {
+.aboutus .position {
+  color: #BFB9B9;
+}
+.aboutus .description {
+  padding: 0 6em 0 6em;
+}
+.aboutus .carousel img {
+  width: auto;
+  height: 180px;
+  max-height: 180px;
+}
+.media {
   background-color: #FAFAFA;
-  padding: 2em 1em 2em 4em;
+  margin-bottom: 4em;
+}
+.media-body {
+  padding: 2em 1em 2em 2em;
+}
+.media-body .media-heading {
+  font-weight: bold;
 }
 .left.carousel-control {
   background-image: url(../img/aboutus/img_left.png);
@@ -614,5 +646,38 @@ footer.footer {
   }
   .solution-item {
     padding: 0;
+  }
+  .aboutus-title1 {
+    color: #79d3d5;
+    margin: 1em;
+  }
+  .aboutus-title2 {
+    color: #5B4E4E;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .aboutus-title3 {
+    color: #BFB9B9;
+    margin: 2em;
+    line-height: 2em;
+  }
+  .media-body {
+    padding: 1em;
+  }
+  .media {
+    margin-bottom: 0em;
+  }
+  .aboutus .description {
+    padding: 1em;
+  }
+  .aboutus .carousel .content {
+    max-height: 200px;
+    min-height: 200px;
+  }
+  .job .nav-pills {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
   }
 }

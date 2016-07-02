@@ -106,6 +106,12 @@ body {
   background-position: center bottom;
   background-size: 4px 4px;
 }
+.dark.navbar-default .navbar-nav>li>a.selected  {
+
+
+  background-image: url(../img/home/img_nav_select_dark.png);
+
+}
 .light.navbar.navbar-default a.navbar-brand {
   color: @navigation-light;
   padding-top: 2rem;
@@ -264,6 +270,9 @@ body {
 .product-title.red {
   background-image: url(../img/product/line_yellow.png);
 }
+.product-title.purple {
+  background-image: url(../img/product/line_purple.png);
+}
 .product-desc {
   line-height: 2em;
 }
@@ -340,6 +349,9 @@ footer.footer {
 .product .thumbnail.thumbnail-gold {
   border-bottom: 2px solid @theme-gold-color;
 }
+.product .thumbnail.thumbnail-purple {
+  border-bottom: 2px solid @theme-purple-color;
+}
 .product .thumbnail.thumbnail-green a {
   color: @theme-primary;
 }
@@ -358,6 +370,9 @@ footer.footer {
 .product .thumbnail.thumbnail-yellow a {
   color: @theme-yellow-color;
 }
+.product .thumbnail.thumbnail-purple a {
+  color: @theme-purple-color;
+}
 //job
 .job {
   background-color: @theme-background;
@@ -366,23 +381,33 @@ footer.footer {
   display: flex;
   justify-content: center;
 }
+.job .nav-pills {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
+}
 .job .nav-pills>li.active>a, .job .nav-pills>li.active>a:focus, .job .nav-pills>li.active>a:hover {
   background-color: transparent;
   color: @theme-primary;
-  .transition-all;
+  background-image: url(../img/job/di_hire_select.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 12px 12.5px;
 }
 .job .nav-pills>li>a {
   color: @theme-text-color;
-  .transition-all;
+
 }
 .job .nav-pills>li>a:focus, .job .nav-pills>li>a:hover {
   background-color: transparent;
   color: @theme-primary;
-  .transition-all;
+
 }
 .job .tab-content {
   background-color: white;
   padding: 2em;
+  margin-bottom: 4em;
 }
 .job h4 {
   font-weight: bold;
@@ -390,7 +415,7 @@ footer.footer {
   padding-left: 0.5em;
 }
 .job .content {
-  padding: 2em;
+  padding: 2em 2em 0 2em;
 }
 .job .content p {
   color: @theme-blue-color;
@@ -408,11 +433,13 @@ footer.footer {
   margin-bottom: 1em;
 }
 .job .job-footer p{
+  padding-top: 1em;
   color: @theme-text-color;
 }
 .job .job-footer a {
   color: @theme-primary;
   text-decoration: underline;
+
 }
 //解决方案首页
 .solution-title {
@@ -468,9 +495,27 @@ footer.footer {
 .contactus {
   margin: 2em 1em 4em 0;
 }
-.address {
+.aboutus .position {
+  color: @theme-text-light-color;
+}
+.aboutus .description {
+  padding: 0 6em 0 6em;
+}
+.aboutus .carousel img {
+  width: auto;
+  height: 180px;
+  max-height: 180px;
+}
+
+.media {
   background-color: @theme-background;
-  padding: 2em 1em 2em 4em;
+  margin-bottom:4em;
+}
+.media-body {
+  padding: 2em 1em 2em 2em;
+}
+.media-body .media-heading {
+  font-weight: bold;
 }
 .left.carousel-control {
   background-image: url(../img/aboutus/img_left.png);
@@ -616,5 +661,38 @@ only screen and (max-width: 480px)
   }
   .solution-item {
     padding: 0;
+  }
+  .aboutus-title1 {
+    color: @theme-primary;
+    margin: 1em;
+  }
+  .aboutus-title2 {
+    color: @theme-text-color;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .aboutus-title3 {
+    color: @theme-text-light-color;
+    margin: 2em;
+    line-height: 2em;
+  }
+  .media-body {
+    padding: 1em;
+  }
+  .media {
+    margin-bottom:0em;
+  }
+  .aboutus .description {
+    padding: 1em;
+  }
+  .aboutus .carousel .content {
+    max-height: 200px;
+    min-height: 200px;
+  }
+  .job .nav-pills {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background-color: white;
   }
 }
