@@ -311,6 +311,7 @@ footer.footer {
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   transition: all 0.25s;
+  min-width: 260px;
 }
 .product .thumbnail:hover,
 .product .thumbnail:focus {
