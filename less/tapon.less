@@ -74,7 +74,7 @@ body {
 }
 .navbar.navbar-default.past-header {
   border-bottom: none;
-  background-color: rgba(0,0,0,0.3);
+  background-color: @theme-primary;
   .transition-all;
 }
 .navbar-default .navbar-nav>li {
@@ -144,20 +144,20 @@ body {
 .section0 img.title {
   width: 419px;
   height: 289px;
-  margin-top: 25%;
+  margin-top: 40vh;
 }
 .section1 img.title {
   width: 419px;
   height: 192px;
-  margin-top: 6%;
-  margin-right: 10%;
+  margin-top: 12vh;
+  margin-right: 10vw;
 
 }
 .section2 img.title {
   width: 704px;
   height: 192px;
-  margin-top: 6%;
-  margin-right: 5%;
+  margin-top: 12vh;
+  margin-right: 5vw;
 
 }
 .entry-panel {
@@ -203,6 +203,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.product-cover.system {
+  height: 50vh;
+  min-height: 50vh;
+}
 .product-cover.quas {
   background-image: url(../img/product/img_product_quas.jpg);
 }
@@ -213,6 +217,8 @@ body {
   background-image: url(../img/product/img_product_clard.jpg);
 }
 .product-cover.solution-system {
+  height: 50vh;
+  min-height: 50vh;
   background-image: url(../img/solution/bg_system.png);
 }
 .product-cover.solution-hotel {
@@ -295,7 +301,7 @@ footer.footer {
 }
 //产品体系
 .product-system {
-  margin-top: -2em;
+  margin-top: 2em;
 }
 .product .title1 {
   font-size: 1.25em;
@@ -585,7 +591,7 @@ only screen and (max-width: 480px)
   }
   .navbar.navbar-default.past-header {
     border-bottom: none;
-    background-color: @theme-primary;
+    background-color: rgba(0,0,0,0.4);
     .transition-all;
   }
   .light.navbar.navbar-default a.navbar-brand {
@@ -634,7 +640,7 @@ only screen and (max-width: 480px)
   }
   .entry-panel {
     position: absolute;
-    background: rgba(0,0,0,0.4);
+    background: @theme-primary;
     bottom: 0;
     padding: 1em 0.5em 1em 0.5em;
     width: 100%;
