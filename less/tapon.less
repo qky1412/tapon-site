@@ -202,8 +202,22 @@ body {
   padding: 1em;
 
 }
-.footer-panel p {
+.footer-panel p, .footer-panel a {
   color: rgba(255,255,255,0.5);
+}
+.footer-panel a {
+  font-size: 0.85em;
+}
+.footer-panel a:hover, .footer-panel a:focus {
+  cursor: hand;
+}
+.footer-panel a.beian {
+  margin-left: 2em;
+  padding-left: 1.75em;
+  background-image: url(../img/beian.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
 }
 //产品详情页
 .product.container-fluid {
@@ -316,6 +330,19 @@ footer.footer {
   color: rgba(255,255,255,0.5);
   padding: 1em;
   background-color: @footer-background;
+}
+footer.footer a {
+  font-size: 0.85em;
+  color: rgba(255,255,255,0.5);
+  cursor: hand;
+}
+footer.footer a.beian {
+  margin-left: 2em;
+  padding-left: 1.75em;
+  background-image: url(../img/beian.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
 }
 //产品体系
 .product-system {
@@ -658,7 +685,7 @@ only screen and (max-width: 480px)
   }
   .entry-panel {
     position: absolute;
-    background: @theme-primary;
+    background: rgba(0,0,0,0.4);
     bottom: 0;
     padding: 1em 0.5em 1em 0.5em;
     width: 100%;
