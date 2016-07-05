@@ -74,6 +74,24 @@ body {
   -moz-transition: all 0.25s;
   transition: all 0.25s;
 }
+.navbar.navbar-default.past-header.gold {
+  background-color: #AD9874;
+}
+.navbar.navbar-default.past-header.red {
+  background-color: #F05A28;
+}
+.navbar.navbar-default.past-header.yellow {
+  background-color: #FABE6C;
+}
+.navbar.navbar-default.past-header.blue {
+  background-color: #4A90E2;
+}
+.navbar.navbar-default.past-header.darkblue {
+  background-color: #274F7E;
+}
+.navbar.navbar-default.past-header.purple {
+  background-color: #6C6CFA;
+}
 .navbar-default .navbar-nav > li {
   padding-top: 1rem;
   padding-bottom: 1rem;
